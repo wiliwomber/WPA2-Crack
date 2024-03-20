@@ -1,2 +1,3 @@
-scapy
+# we need to install the development version of scapy, since the latest release does not contain the EAPOL_KEY class yet
+https://github.com/secdev/scapy/archive/refs/heads/master.zip
 pbkdf2
