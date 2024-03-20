@@ -29,7 +29,6 @@ from utils import *
 # These are the layers that the packet contains
 
 # Your code .....
-
 first_packet = 
 second_packet = 
 

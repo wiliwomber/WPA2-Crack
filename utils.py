@@ -124,6 +124,7 @@ def format_payload(version, packet_type, length, eapol_key_layer):
             bytes([length]) +
             raw(eapol_key_layer).replace(eapol_key_layer.key_mic, bytes([0x00])*16))
 
+# TODO Sometimes this can also be encrypted with md5
 def generate_mic(ptk, payload):
     return hmac.new(ptk[0:16], payload, hashlib.sha1).digest()[:16]
 
